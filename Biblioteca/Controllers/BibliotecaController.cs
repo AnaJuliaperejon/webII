@@ -11,22 +11,27 @@ public class BibliotecaController : Controller
         {
             new Livro
             {
-                titulo = "Harry Potter",
-                numPaginas = 150,
-                autor = "Fulano",
-                genero = "Ficção Científica",
-                dataPublicacao = DateOnly.MaxValue   
+                Titulo = "Harry Potter",
+                NumPaginas = 150,
+                Autor = "Fulano",
+                Genero = "Ficção Científica",
+                DataPublicacao = DateOnly.MaxValue   
             },
             new Livro
             {
-                titulo = "Alíce no País das Maravilhas",
-                numPaginas = 500,
-                autor = "Fulana",
-                genero = "Fantasia",
-                dataPublicacao = DateOnly.MinValue
+                Titulo = "Alíce no País das Maravilhas",
+                NumPaginas = 500,
+                Autor = "Fulana",
+                Genero = "Fantasia",
+                DataPublicacao = DateOnly.MinValue
             }
         };
 
         return View(l1);
+    }
+
+    public IActionResult DetalheLivro()
+    {
+        return View();
     }
 }

@@ -1,0 +1,57 @@
+a{
+    color: #effaee;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: "Almendra", serif;
+    background-color: #1e2f24;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #436349;
+    padding: 50px;
+}
+
+.cabecalho h1 {
+    font-size: 70px;
+}
+
+/* Descrição */
+.descrição {
+    margin: 20px;
+    font-size: 30px;
+    color: #effaee;
+}
+
+/* Seção de livros */
+.livros {
+    display: block;
+    margin: 40px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: #436349;
+}
+
+.livros h2 {
+    margin-bottom: 15px;
+}
+
+.livro{
+    margin: 20px;
+    height: 300px;
+}
+.livros2{
+    display: flex;
+    justify-content: center;
+}

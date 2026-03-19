@@ -1,10 +1,61 @@
 @model List<Biblioteca.Models.Livro>;
 
-@foreach(Livro item in Model)
+@* @foreach(Livro item in Model)
 {
-    <h3>Nome: @item.titulo</h3>
-    <p>Número de páginas: @item.numPaginas</p>
-    <p>Autor: @item.autor</p>
-    <p>Gênero: @item.genero</p>
-    <p>Data de publicação: @item.dataPublicacao</p>
-}
+    <h3>Nome: @item.Titulo</h3>
+    <p>Número de páginas: @item.NumPaginas</p>
+    <p>Autor: @item.Autor</p>
+    <p>Gênero: @item.Genero</p>
+    <p>Data de publicação: @item.DataPublicacao</p>
+} *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    @* <style>
+        *{
+            color: white;
+        }
+    </style> *@
+    <title>Biblioteca</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>Refúgio dos Livros</h1>
+    </div>
+    <h2 class="descrição">Aqui você encontra livros incríveis, cheios de histórias interessantes e encantadoras para todos os leitores.</h2>
+    <div class="livros">
+        <h2>Livros em destaques</h2>
+        <div class="livros2">
+            <div class="destacado">
+                <img src="~/capalivro1.jpg" class="livro"/><br />
+                <a asp-area="" asp-controller="Biblioteca" asp-action="DetalheLivro">Nome do livro</a><br />
+                <a asp-area="" asp-controller="Biblioteca" asp-action="DetalheLivro">Autor</a>
+            </div>
+            <div class="destacado">
+                <img src="~/capalivro2.jpg"class="livro"/><br />
+                <a asp-area="" asp-controller="Biblioteca" asp-action="DetalheLivro">Nome do livro</a><br />
+                <a asp-area="" asp-controller="Biblioteca" asp-action="DetalheLivro">Autor</a>
+            </div>
+            <div class="destacado">
+                <img src="~/capalivro3.jpg"class="livro"/><br />
+                <a asp-area="" asp-controller="Biblioteca" asp-action="DetalheLivro">Nome do livro</a><br />
+                <a asp-area="" asp-controller="Biblioteca" asp-action="DetalheLivro">Autor</a>
+            </div>
+            <div class="destacado">
+                <img src="~/capalivro4.jpg"class="livro"/><br />
+                <a asp-area="" asp-controller="Biblioteca" asp-action="DetalheLivro">Nome do livro</a><br />
+                <a asp-area="" asp-controller="Biblioteca" asp-action="DetalheLivro">Autor</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
