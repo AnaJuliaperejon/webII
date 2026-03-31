@@ -1,6 +1,28 @@
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.holtwood-one-sc-regular {
+  font-family: "Holtwood One SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.federo-regular {
+  font-family: "Federo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a{
     color: #effaee;
 }
+
 /* Reset básico */
 * {
     margin: 0;
@@ -8,50 +30,84 @@ a{
     box-sizing: border-box;
 }
 
+.navbar {
+    background-color: #1B659C !important;
+    border-bottom: none !important;
+    color:#ffff;
+}
+
 /* Corpo da página */
 body {
-    font-family: "Almendra", serif;
-    background-color: #1e2f24;
-    color: #ffffff;
+    background-color: #D2E3EF;
     text-align: center;
+    overflow-y: auto;
 }
 
 /* Cabeçalho */
 .cabecalho {
-    background-color: #436349;
-    padding: 50px;
+    background-image: url('/selo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    padding: 15px;
+    text-align: center;
+
+    background-color: #D2E3EF;
+    color:#242527;
 }
 
 .cabecalho h1 {
-    font-size: 70px;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+    margin:0px;
 }
 
-/* Descrição */
-.descrição {
-    margin: 20px;
-    font-size: 30px;
-    color: #effaee;
+.cabecalho h2 {
+    font-family: "Holtwood One SC", serif;
+    font-style: normal;
+    font-size: 28px;
+    margin-top: -40px;
 }
 
 /* Seção de livros */
 .livros {
     display: block;
-    margin: 40px auto;
-    padding: 20px;
-    width: 60%;
+    margin: 60px auto 120px auto;
+    padding: 30px;
+    width: 70%;
     border-radius: 10px;
-    background-color: #436349;
+    background-color: #1B659C;
 }
 
 .livros h2 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-family: "Italianno", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size:80px;
+    color:#ffff;
 }
 
 .livro{
     margin: 20px;
-    height: 300px;
+    height: 240px;
 }
+
 .livros2{
     display: flex;
     justify-content: center;
+    gap: 40px;
 }
+
+.footer {
+    background-image: url('/rodape.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color: white;
+    text-align: center;
+    padding: 20px;}
